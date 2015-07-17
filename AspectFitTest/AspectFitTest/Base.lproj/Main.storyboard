@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3cA-LJ-BpO" customClass="SPWKAspectFitView">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="300"/>
+                                <color key="backgroundColor" red="0.70762743719333043" green="0.85637636194602984" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Bf-og-ZnL" customClass="SPWKAspectFitView">
+                                <rect key="frame" x="0.0" y="300" width="600" height="300"/>
+                                <color key="backgroundColor" red="1" green="0.78637010730341061" blue="0.94180524939793464" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="8Bf-og-ZnL" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="5Jr-Pf-KZh"/>
+                            <constraint firstAttribute="trailing" secondItem="3cA-LJ-BpO" secondAttribute="trailing" id="AQp-E2-fFJ"/>
+                            <constraint firstItem="3cA-LJ-BpO" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="VtF-JM-2ew"/>
+                            <constraint firstItem="3cA-LJ-BpO" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="gRG-7w-oZH"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="8Bf-og-ZnL" secondAttribute="bottom" id="gxX-9p-Unc"/>
+                            <constraint firstItem="8Bf-og-ZnL" firstAttribute="top" secondItem="3cA-LJ-BpO" secondAttribute="bottom" id="nDS-fd-aaM"/>
+                            <constraint firstItem="8Bf-og-ZnL" firstAttribute="height" secondItem="3cA-LJ-BpO" secondAttribute="height" id="s95-F0-OOU"/>
+                            <constraint firstAttribute="trailing" secondItem="8Bf-og-ZnL" secondAttribute="trailing" id="uIS-dJ-bj0"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bottomAspectFitView" destination="8Bf-og-ZnL" id="5SQ-bE-uVd"/>
+                        <outlet property="topAspectFitView" destination="3cA-LJ-BpO" id="70a-cA-IAI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

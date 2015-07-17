@@ -1,2 +1,2 @@
 # SPWKAspectFitView
-A demo for http://stackoverflow.com/a/26066314/171933
+On http://stackoverflow.com/a/26066314/171933 you can find a description for how to create "aspect-fit" behavior in Interface Builder and how you can do the same in code. This repo demonstrates how to do it in code. The file you want to look at is `AspectFitTest/AspectFitTest/SPWKAspectFitView.m`. Enjoy.
